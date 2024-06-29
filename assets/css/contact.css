@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.contact-container {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    width: 900px;
+}
+
+.contact-container > div {
+    padding: 30px;
+}
+
+.details-container {
+    background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+}
+
+.details-container > p {
+    margin: 10px;
+}
+
+.details-container > h6 {
+    margin: 25px;
+}
+
+.social {
+    margin: 10px 35px;
+}
+
+.social > i {
+    font-size: 25px;
+    margin-right: 15px;
+}

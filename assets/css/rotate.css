@@ -1,0 +1,123 @@
+.message {
+    color: green;
+    text-align: center;
+    margin: 20px;
+    font-size: 18px;
+  }
+
+  .rotate-icon {
+    font-size: 20px;
+    animation: rotate 2s linear infinite;
+    
+    display: inline-block;
+    color: #25D366;
+  }
+
+  @keyframes rotate {
+    from {
+      transform: rotate(0deg);
+    }
+
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+  .whatsapp-container {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    color: #25D366;
+  }
+
+  .whatsapp-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #25D366;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .whatsapp-icon {
+    color: white;
+    background-color: #25D366;
+  }
+
+  .popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+  }
+
+  .popup-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+  }
+
+  #subscribeForm button:hover {
+    background-color: darkgreen;
+
+  }
+
+  .avatar-circle {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 2px solid #ccc;
+  }
+
+  .avatar-circle img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    float: center;
+  }
+
+  .footer {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    width: 40%;
+    background-color: 0;
+    text-emphasis-color: white;
+  }
+
+  .Copyright {
+    background-color: #f8f8f8;
+    padding: 20px;
+    text-align: center;
+    font-size: 12px;
+    font-family: "Montserrat", sans-serif;
+  }
+
+  .hidden-content {
+    display: none;
+  }
+
+  .read-more {
+    cursor: pointer;
+    color: var(--orange-yellow-crayola);
+  }
+
+  .show-more .hidden-content {
+    display: block;
+  }
+
+  .show-more .read-more {
+    display: none;
+  }

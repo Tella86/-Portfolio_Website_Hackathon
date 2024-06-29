@@ -1,0 +1,90 @@
+/* Reset some basic styles */
+body, h2, h3, p, ul, li, a {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+.packages {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px;
+}
+
+.package-card {
+    background-color: #f8f8f8;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 15px;
+    padding: 20px;
+    width: 100%;
+    max-width: 300px;
+    flex: 1 1 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.package-card h2 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.package-card .price {
+    background-color: gold;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 24px;
+    margin: 10px 0;
+    padding: 10px 20px;
+}
+
+.package-card h3 {
+    color: #666;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.package-card ul {
+    list-style: none;
+    margin: 20px 0;
+    padding: 0;
+}
+
+.package-card ul li {
+    margin-bottom: 10px;
+}
+
+.package-card a.choose-plan {
+    background-color: #333;
+    border-radius: 5px;
+    color: #fff;
+    display: inline-block;
+    margin-top: auto;
+    padding: 10px 20px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.package-card a.choose-plan:hover {
+    background-color: #555;
+}
+
+@media (min-width: 600px) {
+    .packages {
+        justify-content: space-around;
+    }
+}
+
+@media (min-width: 900px) {
+    .packages {
+        justify-content: space-between;
+    }
+}

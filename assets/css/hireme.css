@@ -1,0 +1,27 @@
+:root {
+            --orange-yellow-crayola: #ebae35;
+        }
+
+        .btn {
+            padding: 10px 20px;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            color: white;
+        }
+
+        .btn-primary {
+            background-color: var(--orange-yellow-crayola);
+        }
+
+        .btn-primary.blink-blink {
+            animation: blink-animation 1s steps(5, start) infinite;
+        }
+
+        @keyframes blink-animation {
+            to {
+                visibility: hidden;
+            }
+        }
+ 
